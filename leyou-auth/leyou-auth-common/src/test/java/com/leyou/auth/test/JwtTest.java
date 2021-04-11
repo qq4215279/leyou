@@ -13,14 +13,18 @@ public class JwtTest {
 
 //    private static final String pubKeyPath = "C:\\tmp\\rsa\\rsa.pub";
 //    private static final String priKeyPath = "C:\\tmp\\rsa\\rsa.pri";
-    private static final String priKeyPath = "H:\\test\\rsa.pri";
-    private static final String pubKeyPath = "H:\\test\\rsa.pub";
+    private static final String priKeyPath = "D:\\test\\rsa.pri";
+    private static final String pubKeyPath = "D:\\test\\rsa.pub";
 
 
     private PublicKey publicKey;
 
     private PrivateKey privateKey;
 
+    /**
+     * 生成公钥私钥
+     * @throws Exception
+     */
     @Test
     public void testRsa() throws Exception {    //注意：运行这这个测试应先把@Before给注释掉！
         RsaUtils.generateKey(pubKeyPath, priKeyPath, "234");
